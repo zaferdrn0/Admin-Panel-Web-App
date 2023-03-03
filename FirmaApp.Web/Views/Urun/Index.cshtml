@@ -1,0 +1,59 @@
+﻿@model List<Urun>
+<div class="card">
+    <div class="card-header">
+        <table style="width:100%;">
+            <tr>
+                <td>  <h3 class="card-title">Urunlar</h3>  </td>
+                <td style="text-align:right;">
+                    <a href="/Urun/Ekle" class="btn btn-sm btn-success">
+                        Urun Ekle
+                    </a>
+
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+<!-- /.card-header -->
+
+<div class="card-body p-0">
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+
+
+
+                <th>Urun</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (Urun u in Model)
+            {
+                <tr>
+
+
+
+                    <td>@u.ad</td>
+                    <td>@u.ozet</td>
+                    <td>@u.detay</td>
+                    <td>
+                        <a href="/Urun/Duzenle/@u.urunID" class="btn btn-sm btn-info" title="Düzenle" style="text-align:right">
+                            <i class="fa fa-edit"></i>
+
+                        </a>
+                        <a href="/Urun/Sil/@u.urunID" class="btn btn-danger btn-sm" title="Sil" onclick="return confirm('Silmek istediğinizden emin misiniz ?') ">
+                            <i class="fa fa-trash"></i>
+                        </a>
+
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+<!-- /.card-body -->

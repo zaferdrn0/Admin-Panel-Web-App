@@ -1,0 +1,65 @@
+﻿<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>İletişim</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Ev</a></li>
+                        <li class="breadcrumb-item active">İletişim</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        @using (Html.BeginForm("Gonder", "Iletisim"))
+        {
+            <!-- Default box -->
+            <div class="card">
+                <div class="card-body row">
+                    <div class="col-5 text-center d-flex align-items-center justify-content-center">
+                        <div class="">
+                            <h2><strong>ZCE</strong> <br />Firma </h2>
+                            <p class="lead mb-5">
+                                Duzce Universitesi Muhendislik Fakultesi<br>
+                                Bilgisayar Muh. Onur Ogrencisi<br />
+                                Telefon: 0560 123 21 12
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-7">
+                        <div class="form-group">
+                            <label for="inputName">Ad</label>
+                            <input type="text" id="inputName" name="ad" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">E-Mail</label>
+                            <input type="email" id="inputEmail" name="eposta" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="inputSubject">Konu</label>
+                            <input type="text" id="inputSubject" name="konu" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="inputMessage">Mesaj</label>
+                            <textarea id="inputMessage" class="form-control" name="icerik" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary" value="Mesaj Gonder">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        }
+    </section>
+    <!-- /.content -->
+</div>

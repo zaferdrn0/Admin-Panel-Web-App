@@ -1,0 +1,32 @@
+﻿@model Hizmet
+<div class="card card-success">
+    <div class="card-header">
+        <h3 class="card-title">Hizmet Duzenle</h3>
+    </div>
+    <!-- /.card-header -->
+    <!-- form start -->
+    @using (Html.BeginForm())
+    {
+        <div class="card-body">
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Hizmet</label>
+                @Html.TextBoxFor(x => x.ad, new { @class = "form-control" })
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Aciklama</label>
+                @Html.TextBoxFor(x => x.aciklama, new { @class = "form-control" })
+
+            </div>
+
+
+
+        </div>
+        <!-- /.card-body -->
+
+        <div class="card-footer">
+            <button type="submit" class="btn btn-success">Kaydet</button>
+        </div>
+    }
+</div>

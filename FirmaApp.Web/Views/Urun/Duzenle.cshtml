@@ -1,0 +1,35 @@
+﻿@model  Urun
+<div class="card card-success">
+    <div class="card-header">
+        <h3 class="card-title">Urun Duzenle</h3>
+    </div>
+    <!-- /.card-header -->
+    <!-- form start -->
+    @using (Html.BeginForm())
+    {
+        <div class="card-body">
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Adi</label>
+                @Html.TextBoxFor(x => x.ad, new { @class = "form-control" })
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Özet</label>
+                @Html.TextBoxFor(x => x.ozet, new { @class = "form-control" })
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Detaylar</label>
+                @Html.TextBoxFor(x => x.detay, new { @class = "form-control" })
+
+            </div>
+
+        </div>
+        <!-- /.card-body -->
+
+        <div class="card-footer">
+            <button type="submit" class="btn btn-success">Kaydet</button>
+        </div>
+    }
+</div>f

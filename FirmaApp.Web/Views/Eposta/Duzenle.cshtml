@@ -1,0 +1,25 @@
+﻿@model  Eposta
+<div class="card card-success">
+    <div class="card-header">
+        <h3 class="card-title">Eposta Duzenle</h3>
+    </div>
+    <!-- /.card-header -->
+    <!-- form start -->
+    @using (Html.BeginForm())
+    {
+        <div class="card-body">
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">E-Posta</label>
+                @Html.TextBoxFor(x => x.posta, new { @class = "form-control" })
+               
+            </div>
+
+        </div>
+        <!-- /.card-body -->
+
+        <div class="card-footer">
+            <button type="submit" class="btn btn-success">Kaydet</button>
+        </div>
+    }
+</div>

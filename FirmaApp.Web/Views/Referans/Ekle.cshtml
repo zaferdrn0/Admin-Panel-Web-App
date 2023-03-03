@@ -1,0 +1,25 @@
+﻿<div class="card card-success">
+    <div class="card-header">
+        <h3 class="card-title">Referans Ekle</h3>
+    </div>
+    <!-- /.card-header -->
+    <!-- form start -->
+    @using (Html.BeginForm())
+    {
+        <div class="card-body">
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Referans Adi</label>
+                <input type="text" class="form-control" name="ad" id="ad" placeholder="Adi">
+            </div>
+
+
+
+        </div>
+        <!-- /.card-body -->
+
+        <div class="card-footer">
+            <button type="submit" class="btn btn-success">Kaydet</button>
+        </div>
+    }
+</div>

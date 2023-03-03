@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirmaApp.Web", "FirmaApp.Web\FirmaApp.Web.csproj", "{C8DE31A3-88BE-4F32-8234-7F35F849E16C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirmaApp.Model", "FirmaApp.Model\FirmaApp.Model.csproj", "{6C68AEE6-6ADE-4748-B292-4C9EE323C8A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8DE31A3-88BE-4F32-8234-7F35F849E16C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8DE31A3-88BE-4F32-8234-7F35F849E16C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8DE31A3-88BE-4F32-8234-7F35F849E16C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8DE31A3-88BE-4F32-8234-7F35F849E16C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C68AEE6-6ADE-4748-B292-4C9EE323C8A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C68AEE6-6ADE-4748-B292-4C9EE323C8A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C68AEE6-6ADE-4748-B292-4C9EE323C8A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C68AEE6-6ADE-4748-B292-4C9EE323C8A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {206BB420-B23D-4F23-A93A-D5374F38C090}
+	EndGlobalSection
+EndGlobal
